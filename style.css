@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  display: grid;
+  margin: 0;
+  height: 100vh;
+  grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-rows: 80px 1fr 90px;
+    grid-template-columns: 1fr 1fr;
+    font: 300 0.8rem 'Poppins', sans-serif;
+   -webkit-font-smoothing: antialiased;
+}
+
+header { 
+  background-color: rgb(6, 9, 37);
+  grid-area: header;
+  display: flex; 
+  align-items: center;
+  border-bottom: 1px solid #010213;
+
+}
+header img {
+  block-size: 30px;
+  margin-left: 1.5rem;
+  margin-right: 0.2rem
+  
+}
+
+header div img{
+  block-size: 55px;
+  margin-left: 0.8rem;
+  
+}
+
+header .logo {
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 0.2rem;
+  margin-right: 1.5rem;
+}
+
+header .selectshib {
+  background:  rgba(180, 175, 169, 0.089); 
+  border: 1px solid rgba(250, 248, 248, 0.18);
+  border-radius: 0.40rem 0.40rem 0.40rem 0.40rem;
+  padding: 1.4rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+
+}
+
+header .selectshib img {
+  block-size: 35px;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+
+header .selectxrp {
+  background:  rgba(180, 175, 169, 0.089); 
+  border: 1px solid rgba(250, 248, 248, 0.18);
+  border-radius: 0.40rem 0.40rem 0.40rem 0.40rem;
+  padding: 1.3rem;
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+
+}
+
+header .selectxrp img {
+  block-size: 35px;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+
+header .selectada {
+  background:  rgba(180, 175, 169, 0.089); 
+  border: 1px solid rgba(250, 248, 248, 0.18);
+  border-radius: 0.40rem 0.40rem 0.40rem 0.40rem;
+  padding: 1.4rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.3rem;
+}
+
+header .selectada img {
+  block-size: 35px;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+
+header .selecttrx {
+  background:  rgba(180, 175, 169, 0.089); 
+  border: 1px solid rgba(250, 248, 248, 0.18);
+  border-radius: 0.40rem 0.40rem 0.40rem 0.40rem;
+  padding: 1.4rem;
+  width: 8.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.3rem;
+}
+
+header .selecttrx img {
+  block-size: 35px;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+
+header .selectxlm {
+  background:  rgba(180, 175, 169, 0.089); 
+  border: 1px solid rgba(250, 248, 248, 0.18);
+  border-radius: 0.40rem 0.40rem 0.40rem 0.40rem;
+  padding: 1.4rem;
+  width: 9.3rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+header .selectxlm img {
+  block-size: 35px;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+
+
+header a img{
+  margin-bottom: -0.71rem; 
+}
+
+main {
+  background-color: rgba(248, 246, 246, 0.568);
+  grid-area: main;
+  position: relative;
+  
+  align-content: center;
+}
+
+main img {
+  position: fixed;
+}
+
+main div {
+  padding: 1.5rem 0.5rem;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+ background:  rgba(20, 20, 2, 0.418);
+   box-shadow:   15px 15px 15px 0 rgba(15, 15, 20, 0.692);
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+    margin-top: 0.8rem;
+    color: white;
+  align-content: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  }
+
+main h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+aside {
+  grid-area: aside;
+  
+}
+
+.login  {
+  padding: 0.5rem 0.5rem;
+   border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+  text-align: center;
+  margin: 3rem;
+  margin-top: 10rem;
+  background: rgba(20, 2, 2, 0.418);
+    box-shadow:  15px 15px 15px 0 rgba(15, 15, 20, 0.692);
+    backdrop-filter: blur( 0.1px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+
+}
+
+aside div input {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 85%;
+  height: 30px;
+  background: rgb(250, 249, 249); 
+    backdrop-filter: blur( 25.5px );
+    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+}
+aside img {
+  position: fixed;
+  border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+aside div h1 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+aside button {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  width: 6rem;
+  background:  rgba(20, 20, 2, 0.418);
+  box-shadow:   15px 15px 15px 0 rgba(15, 15, 20, 0.692);
+  border: 1px solid rgba(241, 235, 235, 0.699);
+  color: white;
+  border-radius: 0.5rem;
+
+  
+}
+
+footer {
+  background-color: rgb(6, 9, 37);
+  grid-area: footer;
+  position: relative;
+  border-top: 1px solid #010213;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer div {
+margin-top:  1.5rem;
+
+}
+
+
+
+
